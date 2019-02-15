@@ -1,0 +1,136 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Alegreya Sans;
+  font-size: 18px;
+}
+
+p {
+  font-size: 20px;
+  text-align: center
+}
+
+p.indented {
+  padding-left: 165pt;
+  padding-right: 165pt;
+}
+
+#countdowntimer {
+  text-align: center;
+  font-size: 70px;
+  margin-top: 0px;
+  font-family: Anton;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgba(59, 166, 247, 1); 
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: black;
+  padding: 24px 28px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  padding: 24px 28px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: transparent;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(59, 166, 247, 1);
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 20px 28px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.bg {
+  background-image: url("images2/gc1.jpg");
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+table, tr, td {
+border: 1px solid black;
+text-align: left;
+border-collapse: collapse;
+width: 50%;
+padding: 15px;
+background-color: ;
+}
+
+tr:nth-child(odd) {
+background-color: rgba(59, 166, 247, 0.5);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  background-color: rgba(59, 166, 247, 0.5);
+  padding: 25px 50px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  font-family: Alegreya Sans;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: rgba(59, 166, 247, 0.5); 
+  border: rgba(59, 166, 247, 0.5);
+}	
+
+.button1:hover {
+  background-color: rgba(59, 166, 247, 1);
+  border: 2px solid rgba(59, 166, 247, 1);
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya Sans' rel='stylesheet'>
+</head>
+
+<div class="navbar">
+  
+	<a href="index.html">Home</a> 
+  
+	<div class="dropdown">
+		<button class="dropbtn">Race Categories</button>
+			<div class="dropdown-content">
+				<a href="fullmarathon.html">Full Marathon</a> 
+				<a href="halfmarathon.html">Half Marathon</a>
+				<a href="10km.html">10km</a>
+			</div>
+	</div>
+		  
+	<a href="entryfees.html">Entry Fees</a> 
+		  
+	<div class="dropdown">
+		<button class="dropbtn">Training</button>
+		<div class="dropdown-content">
+			<a href="trainingtips.html">Training Tips</a> 
+			<a href="trainingresources.html">Training Resources</a>
+			<a href="raceweektips.html">Race Week Tips</a>
+		</div>
+	</div> 
+
+</div>
+
+<body>
+
+<div class="bg" style="text-align:center; font-size:90px; color: rgba(245, 229, 27, 1); font-family:Anton; text-shadow: 3px 3px 5px black"><br>GOLD COAST MARATHON 2019</div> 
+
+<br>
+
+<p id="countdowntimer"></p>
+
+<script>
+<!-- Set the date to countdown to -->
+var countDownDate = new Date("July 6, 2019 06:30:00").getTime();
+
+<!-- Update the count down every 1 second -->
+var x = setInterval(function() {
+
+  <!-- Get todays date and time -->
+  var now = new Date().getTime();
+    
+  <!-- Find the distance between now and the count down date -->
+  var distance = countDownDate - now;
+    
+  <!-- Time calculations for days, hours, minutes and seconds -->
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  <!-- Output the result in an element with id="demo" -->
+  document.getElementById("countdowntimer").innerHTML = days + "d " + hours + "h "
+  + minutes + "min " + seconds + "s ";
+    
+  <!-- If the count down is over, write some text --> 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdowntimer").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<h1 style="text-align:center">Gold Coast Marathon 2019</h1>
+
+<p class="indented" style="text-align:justify">Celebrate the 41st edition of the Gold Coast Marathon and run for the good times on Saturday 6 – Sunday 7 July 2019 on the beautiful Gold Coast in Queensland, Australia. <br><br>
+
+The world class international marathon will attract 28,000 participants of all ages and abilities from over 50 countries across eight races including the Gold Coast Marathon, Wheelchair Marathon, ASICS Half Marathon, Wheelchair 15km, Southern Cross University 10km Run, Gold Coast Airport Fun Run, Garmin 4km Junior Dash and Garmin 2km Junior Dash. <br><br>
+
+The Gold Coast Marathon, an IAAF Gold Label Road Race, is the pinnacle of road running events in Australia and during its 40-year history has distinguished itself as one of the most prestigious marathons in the world. <br><br>
+
+Its famous flat, fast and scenic course located alongside the city’s renowned surf beaches and stunning broadwater plus ideal winter running conditions featuring low humidity, little wind and mild temperatures result in 60% of participants achieving personal best times each year. <br><br></p>
+
+	<script>
+	function PaxtonsLink() {
+		window.open("https://goldcoastmarathon.com.au/", "_blank");
+	}
+	</script>
+
+	<center>
+	<button class="button button1" onclick="PaxtonsLink()">Learn More</button>
+	</center>
+
+</body>
+
+
+</html>
